@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-20T19:12:13 IST" name="Tutorial Ninja Automation Suite" finished-at="2023-11-20T19:13:15 IST" duration-ms="61944">
+    <groups>
+    </groups>
+    <test started-at="2023-11-20T19:12:13 IST" name="Tutorial Ninja" finished-at="2023-11-20T19:13:15 IST" duration-ms="61944">
+      <class name="com.tutorialNinja.qa.TestCase.Login">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:14 IST" name="launch" finished-at="2023-11-20T19:12:17 IST" duration-ms="3317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:17 IST" name="verifyLoginWithValidCredentials" data-provider="supplyDataFromExcel" finished-at="2023-11-20T19:12:19 IST" duration-ms="1233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ninja@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninja]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:19 IST" name="tearDown" finished-at="2023-11-20T19:12:19 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:19 IST" name="launch" finished-at="2023-11-20T19:12:21 IST" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyLoginWithInvalidCredentials()[pri:2, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:21 IST" name="verifyLoginWithInvalidCredentials" finished-at="2023-11-20T19:12:22 IST" duration-ms="1355" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Warning: N match for E-Mail Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Warning: N match for E-Mail Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.tutorialNinja.qa.TestCase.Login.verifyLoginWithInvalidCredentials(Login.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:22 IST" name="tearDown" finished-at="2023-11-20T19:12:23 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:23 IST" name="launch" finished-at="2023-11-20T19:12:25 IST" duration-ms="2416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyLoginWithInvalidEmail()[pri:3, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:25 IST" name="verifyLoginWithInvalidEmail" finished-at="2023-11-20T19:12:26 IST" duration-ms="1430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:26 IST" name="tearDown" finished-at="2023-11-20T19:12:27 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:27 IST" name="launch" finished-at="2023-11-20T19:12:29 IST" duration-ms="2263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyLoginWithInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:29 IST" name="verifyLoginWithInvalidPassword" data-provider="supplyDataFromExcel" finished-at="2023-11-20T19:12:30 IST" duration-ms="1276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ninja@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninja]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:30 IST" name="tearDown" finished-at="2023-11-20T19:12:31 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:31 IST" name="launch" finished-at="2023-11-20T19:12:33 IST" duration-ms="2393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyLoginWithEmptyFields()[pri:5, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:33 IST" name="verifyLoginWithEmptyFields" finished-at="2023-11-20T19:12:34 IST" duration-ms="1158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:34 IST" name="tearDown" finished-at="2023-11-20T19:12:34 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:34 IST" name="launch" finished-at="2023-11-20T19:12:37 IST" duration-ms="2713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyForgotPassowrdWorkProperly()[pri:6, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:37 IST" name="verifyForgotPassowrdWorkProperly" finished-at="2023-11-20T19:12:38 IST" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPassowrdWorkProperly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:38 IST" name="tearDown" finished-at="2023-11-20T19:12:38 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:38 IST" name="launch" finished-at="2023-11-20T19:12:41 IST" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyThatUserShouldLoginWithKeyboard(java.lang.String,java.lang.String)[pri:7, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:41 IST" name="verifyThatUserShouldLoginWithKeyboard" data-provider="supplyDataFromExcel" finished-at="2023-11-20T19:12:42 IST" duration-ms="996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ninja@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninja]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserShouldLoginWithKeyboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:42 IST" name="tearDown" finished-at="2023-11-20T19:12:42 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:42 IST" name="launch" finished-at="2023-11-20T19:12:44 IST" duration-ms="2211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyThePlaceHolderInEmailAndPasswordField()[pri:8, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:44 IST" name="verifyThePlaceHolderInEmailAndPasswordField" finished-at="2023-11-20T19:12:45 IST" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePlaceHolderInEmailAndPasswordField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:45 IST" name="tearDown" finished-at="2023-11-20T19:12:45 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:45 IST" name="launch" finished-at="2023-11-20T19:12:48 IST" duration-ms="2315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyLoggingoutFromTheApplicationAndBrowsingBackUsingBrowserBackButton(java.lang.String,java.lang.String)[pri:9, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:48 IST" name="verifyLoggingoutFromTheApplicationAndBrowsingBackUsingBrowserBackButton" data-provider="supplyDataFromExcel" finished-at="2023-11-20T19:12:49 IST" duration-ms="1216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ninja@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninja]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggingoutFromTheApplicationAndBrowsingBackUsingBrowserBackButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Login@10aa41f2]" started-at="2023-11-20T19:12:49 IST" name="tearDown" finished-at="2023-11-20T19:12:49 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tutorialNinja.qa.TestCase.Login -->
+      <class name="com.tutorialNinja.qa.TestCase.Registor">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:12:49 IST" name="launch" finished-at="2023-11-20T19:12:52 IST" duration-ms="3292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyRegisteringAnAccountByProvidingOnlyTheMandatoryFields()[pri:1, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:12:52 IST" name="verifyRegisteringAnAccountByProvidingOnlyTheMandatoryFields" finished-at="2023-11-20T19:12:54 IST" duration-ms="1705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteringAnAccountByProvidingOnlyTheMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:12:54 IST" name="tearDown" finished-at="2023-11-20T19:12:54 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:12:54 IST" name="launch" finished-at="2023-11-20T19:12:57 IST" duration-ms="2345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyRegisteringWithoutEnteringCredentials()[pri:2, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:12:57 IST" name="verifyRegisteringWithoutEnteringCredentials" finished-at="2023-11-20T19:12:58 IST" duration-ms="1664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteringWithoutEnteringCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:12:58 IST" name="tearDown" finished-at="2023-11-20T19:12:59 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:12:59 IST" name="launch" finished-at="2023-11-20T19:13:01 IST" duration-ms="2341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyRegisteringAnAccountBySelectingYesSubscribtion()[pri:3, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:01 IST" name="verifyRegisteringAnAccountBySelectingYesSubscribtion" finished-at="2023-11-20T19:13:03 IST" duration-ms="1716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteringAnAccountBySelectingYesSubscribtion -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:03 IST" name="tearDown" finished-at="2023-11-20T19:13:03 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:03 IST" name="launch" finished-at="2023-11-20T19:13:05 IST" duration-ms="2373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyRegisteringAnAccountByEnteringDifferentPasswordsIntoPasswordAndPasswordConfirmFields()[pri:4, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:05 IST" name="verifyRegisteringAnAccountByEnteringDifferentPasswordsIntoPasswordAndPasswordConfirmFields" finished-at="2023-11-20T19:13:07 IST" duration-ms="1466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteringAnAccountByEnteringDifferentPasswordsIntoPasswordAndPasswordConfirmFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:07 IST" name="tearDown" finished-at="2023-11-20T19:13:07 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:07 IST" name="launch" finished-at="2023-11-20T19:13:09 IST" duration-ms="2364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="verifyRegisteringAnAccountByProvidingTheExistingAccountDetails()[pri:5, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:09 IST" name="verifyRegisteringAnAccountByProvidingTheExistingAccountDetails" finished-at="2023-11-20T19:13:11 IST" duration-ms="1625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisteringAnAccountByProvidingTheExistingAccountDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:11 IST" name="tearDown" finished-at="2023-11-20T19:13:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:11 IST" name="launch" finished-at="2023-11-20T19:13:13 IST" duration-ms="2351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="vVerifyRegisteringAnAccountByProvidingAnInvalidEmailAddressIntoTheEmailField()[pri:6, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:13 IST" name="vVerifyRegisteringAnAccountByProvidingAnInvalidEmailAddressIntoTheEmailField" finished-at="2023-11-20T19:13:15 IST" duration-ms="1754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vVerifyRegisteringAnAccountByProvidingAnInvalidEmailAddressIntoTheEmailField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialNinja.qa.TestCase.Registor@fa36558]" started-at="2023-11-20T19:13:15 IST" name="tearDown" finished-at="2023-11-20T19:13:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tutorialNinja.qa.TestCase.Registor -->
+    </test> <!-- Tutorial Ninja -->
+  </suite> <!-- Tutorial Ninja Automation Suite -->
+</testng-results>
